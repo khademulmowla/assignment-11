@@ -1,0 +1,15 @@
+/* Custom styles for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d59b27; /* Makes the arrows golden */
+}
+
+/* .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ffd700; 
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px; 
+} */
