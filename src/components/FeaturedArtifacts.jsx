@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import ArtifactCard from '../components/ArtifactCard';
+import ArtifactCard from './ArtifactCard';
 
-const AllArtifacts = () => {
+const FeaturedArtifacts = () => {
     const [arts, setArts] = useState([])
     useEffect(() => {
         fetchAllArts()
@@ -13,7 +13,7 @@ const AllArtifacts = () => {
     }
     return (
         <div>
-            <div className='grid grid-cols-1 px-6 gap-8 mt-8 xl:mt-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+            <div className='grid grid-cols-1 px-6 gap-8 my-6 xl:mt-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
                 {
                     arts.map(art => <ArtifactCard art={art} key={art._id}></ArtifactCard>)
                 }
@@ -22,4 +22,4 @@ const AllArtifacts = () => {
     );
 };
 
-export default AllArtifacts;
+export default FeaturedArtifacts;
